@@ -5,9 +5,11 @@ import RouterProvider from './RouterProvider';
 
 function App() {
   return (
-    <React.StrictMode>
-      <RouterProvider />
-    </React.StrictMode>
+    <div test-id="react-app">
+      <React.StrictMode>
+        <RouterProvider />
+      </React.StrictMode>
+    </div>
   );
 }
 
