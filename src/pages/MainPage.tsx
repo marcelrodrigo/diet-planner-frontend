@@ -1,16 +1,18 @@
-import { Layout, Menu } from 'antd';
-import styles from './MainPageStyles';
+import { Layout } from 'antd';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
+import Content from '../components/Content';
 
-const { Header, Content } = Layout;
-const menuItems = ['Alimentos', 'Cardápio'].map((label, i) => ({ key: i + 1, label }))
-
-const MainPage = () => (
-    <Layout>
-        <Header style={styles.header}>
-            <div style={styles.logo}></div>
-            <Menu mode='horizontal' items={menuItems} theme='dark' />
-        </Header>
-    </Layout>
-)
+const MainPage = () => {
+    return (
+        <Layout>
+            <Header />
+            <Content>
+                Hello
+            </Content>
+            <Footer />
+        </Layout>
+    );
+}
 
 export default MainPage;
