@@ -1,9 +1,10 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import MainPage from './pages/MainPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Main Page</div>
+    element: <MainPage />
   }
 ]);
 
